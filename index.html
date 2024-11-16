@@ -3,12 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Hero Marvel</title>
 </head>
 <body>
-  <div class="img-wrapper">
-    <img src="img/background.jpg" alt="">
+  <div class="container">
+    <div class="app-content">
+      <img src="img/background.jpg" alt="">
+      <div class="app-header">
+        <form action="" class="search-bar">
+          <input type="text" placeholder="Search your superhero here ..." name="search" id="search-input">  
+          <button type="submit">
+            <i class="fas fa-search"></i>
+          </button>      
+        </form>
+      </div>
+    </div>
   </div>
+  <script src="js/script.js"></script>
 </body>
 </html>

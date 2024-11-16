@@ -3,29 +3,83 @@
   padding: 0;
   list-style: none;
   text-decoration: none;
+  box-sizing: border-box;
 }
 
-.img-wrapper {
+.container {
+  position: relative;
   width: 100%;
-  height: 100vh; /* Garantir que a altura seja 100% da altura da tela */
-  overflow: hidden;
-  background-color: rgba(0, 0, 0, 0.8);
-  position: relative; /* Para controlar o layout corretamente */
+  height: 100vh;
 }
 
-.img-wrapper img {
-  width: 100%; /* A imagem vai ocupar toda a largura do contêiner */
-  height: 100%; /* A imagem vai ocupar toda a altura do contêiner */
-  object-fit: cover; /* A imagem vai cobrir todo o espaço disponível sem distorção */
+.app-content {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  position: relative; /* Para que o formulário use este contêiner como referência */
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.app-content img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   opacity: 0.5;
   animation: zoom 25s infinite alternate;
 }
 
+.app-header {
+  position: absolute;
+  top: 50%; /* Centraliza verticalmente */
+  left: 50%; /* Centraliza horizontalmente */
+  transform: translate(-50%, -50%); /* Ajusta para o centro exato */
+  z-index: 10; /* Garante que o formulário esteja visível acima da imagem */
+  width: 90%; /* Responsividade - ajusta a largura em telas menores */
+  max-width: 700px; /* Largura máxima para telas grandes */
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 3.5em; /* Altura proporcional e responsiva */
+  border-radius: 3em; /* Bordas arredondadas */
+  background-color: rgba(255, 255, 255, 0.8); /* Fundo semi-transparente */
+  padding: 0 1em; /* Espaçamento interno proporcional */
+}
+
+#search-input {
+  background: transparent;
+  flex: 1;
+  padding: 0.8em; /* Espaçamento interno proporcional */
+  font-size: 1em; /* Tamanho de fonte responsivo */
+  border: 0;
+  outline: none;
+  color: #e52d2d;
+}
+
+button {
+  border: 0;
+  border-radius: 50%;
+  width: 3em; /* Altura e largura proporcionais */
+  height: 3em;
+  cursor: pointer;
+  background: #e52d2d;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button i {
+  font-size: 1em; /* Ícone com tamanho proporcional */
+}
+
 @keyframes zoom {
   0% {
-    transform: scale(1.3); /* Começa maior */
+    transform: scale(1.3);
   }
   100% {
-    transform: scale(1); /* Diminui para o tamanho original */
+    transform: scale(1);
   }
 }
