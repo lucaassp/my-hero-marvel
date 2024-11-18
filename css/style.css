@@ -30,7 +30,7 @@
 
 .app-header {
   position: absolute;
-  top: 20%;
+  top: 22%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 10;
@@ -38,12 +38,28 @@
   max-width: 600px; /* Define um limite máximo para telas maiores */
 }
 
+.app-header-title {
+  position: absolute; /* Posiciona o título sobre a imagem */
+  top: 10%; /* Ajuste a posição vertical do título */
+  left: 50%; /* Centraliza horizontalmente */
+  transform: translateX(-50%); /* Ajusta para centralizar exato */
+  font-size: 3rem;
+  background-image: linear-gradient(to right, rgba(255, 214, 214, 0.759), rgb(252, 81, 81));
+  color: transparent;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -o-background-clip: text;
+  background-clip: text;
+  z-index: 10; /* Garante que o título esteja acima da imagem */
+  text-align: center;
+}
+
 .search-bar {
   display: flex;
   align-items: center;
   width: 100%; /* Usa toda a largura do contêiner pai */
   height: 2.6em;
-  border: 2px solid #e52d2d;
+  border: 1.6px solid #e52d2d;
   border-radius: 50px;
   background-color: rgba(255, 255, 255, 0.8);
   padding: 1rem 0rem 1rem 0.5rem;
