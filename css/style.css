@@ -1,3 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Marvel:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root {
+  --marvel-font: "Marvel", sans-serif;
+  --comic-font: "Comic Neue", cursive;
+
+  --red-color: #9E1B1B;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -43,6 +52,7 @@
   top: 10%; /* Ajuste a posição vertical do título */
   left: 50%; /* Centraliza horizontalmente */
   transform: translateX(-50%); /* Ajusta para centralizar exato */
+  font-family: var(--marvel-font);
   font-size: 3rem;
   background-image: linear-gradient(to right, rgba(255, 214, 214, 0.759), rgb(252, 81, 81));
   color: transparent;
@@ -59,7 +69,7 @@
   align-items: center;
   width: 100%; /* Usa toda a largura do contêiner pai */
   height: 2.6em;
-  border: 1.6px solid #e52d2d;
+  border: 1.6px solid var(--red-color);
   border-radius: 50px;
   background-color: rgba(255, 255, 255, 0.8);
   padding: 1rem 0rem 1rem 0.5rem;
@@ -74,7 +84,7 @@
   font-size: 1em;
   border: 0;
   outline: none;
-  color: #e52d2d;
+  color: var(--red-color);
 }
 
 button {
@@ -83,7 +93,7 @@ button {
   width: 3em; /* Reduz tamanho do botão para telas menores */
   height: 3em;
   cursor: pointer;
-  background: #e52d2d;
+  background: var(--red-color);
   color: white;
   display: flex;
   justify-content: center;
