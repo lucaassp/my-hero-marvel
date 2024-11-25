@@ -120,6 +120,19 @@ button i {
   overflow: hidden; /* Garante que o conteúdo fique dentro do contêiner */
 }
 
+.name-hero {
+  display: inline-block;
+  padding: 4px 6px; 
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 4px 6px; 
+  background: var(--yellow-light-color);
+  color: var(--golden-color);
+  border-radius: 40px;
+  font-family: var(--marvel-font);
+
+}
+
 .card-info {
   display: block;
   padding: 4px;
@@ -130,18 +143,7 @@ button i {
   word-break: break-word; 
   overflow-wrap: break-word; 
   text-align: justify;
-}
-
-.name-hero {
-  display: block;
-  padding: 4px 8px;
-  font-size: 1rem;
-  font-weight: 900;
-  margin: 4px 14px;
-  background: var(--yellow-light-color);
-  color: var(--golden-color);
-  border-radius: 50px;
-  font-family: var(--marvel-font);
+  margin: 4px 6px;
 }
 
 .card-image{
