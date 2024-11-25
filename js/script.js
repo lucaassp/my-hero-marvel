@@ -1,4 +1,4 @@
-const publicKeyApi = 'd28ef029a68ad984b5e2be6fa65b6512';
+/*const publicKeyApi = 'd28ef029a68ad984b5e2be6fa65b6512';
 
 async function getAllHeros() {
   const timeStamp = '1';
@@ -14,3 +14,4 @@ async function getAllHeros() {
 }
 
 getAllHeros();
+*/
